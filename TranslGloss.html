@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center><h1>ТЕЗАУРУС ПЕРЕКЛАДОЗНАВЧИХ ТЕРМІНІВ</h1></center>
+<meta charset='utf-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"> </script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<form id="langSelect">
+    <p>Select the interface language:</p>
+    <div>
+        <input type="radio" id="langEngl"  checked="true"
+               name="language" value="English">
+        <label for="langEngl">English</label>
+
+        <input type="radio" id="langUkr"
+               name="language" value="Ukrainian">
+        <label for="langUkr">Ukrainian</label>
+
+        <input type="radio" id="langSpanish"
+               name="language" value="Spanish">
+        <label for="langSpanish">Spanish</label>
+
+        <input type="radio" id="langPort"
+               name="language" value="Portuguese">
+        <label for="langPort">Portuguese</label>
+
+    </div>
+</form>
+</br>
+
+<p><center><input style="background-color: lightcoral ; height: 10%; width: 45%"  id="mainInput"></input>
+
+</br>
+
+
+    <button style="height: 40%; width:20%; vertical-align: top; background-color: mediumpurple" type="button" id="btnFind">Шукати</button>
+    <button style="height: 40%; width:20%; vertical-align: top;  background-color: aquamarine" type="button" id="btnThesaurus">Тезаурус</button>
+    <div id="divOutput" align="left">
+    <p><a href="AboutTranslGloss.html" id="about">Про словник</a></p>
+
+    </div>
+    <div id="canvId">
+        <canvas id="canv"  width=900 height=700></canvas>   <!-- any size you want -->
+    </div>
+    </center>
+
+
+<style type="text/css">
+    #canvId, #divOutput{
+        display: inline-block;
+
+    }
+
+    body {
+        background-image: url('constellations2.png');
+        background-repeat: no-repeat;
+        background-size:     cover;
+    }
+
+
+</style>
+
+</body>
+<script src="updateLanguage.js"></script>
+<script src="main_transl_gloss.js"></script>
+
+</html>
